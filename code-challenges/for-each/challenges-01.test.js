@@ -9,11 +9,11 @@ Then, write a function named speaker that takes in a string and a callback funct
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  return word.toUpperCase();
 };
 
 const speaker = (message, callback) => {
-  // Solution code here...
+  return callback(message);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,11 +33,15 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+    arr = [];
+    for (let i = 0; i < times; i++) {
+        callback(arr, num)
+    }
+    return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,7 +62,11 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let arr = [];
+  availableItems.forEach(item => {
+      if (item.available) (arr.push(item.name));
+  })
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -76,7 +84,18 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  for (let i = 0; i < arr.length; i++) {
+      if (i % 3) {
+        print("Fizz")
+      } else if (i % 5) {
+        print("Buzz")
+      } else if ( i % (3, 5)) {
+          print("Fizz Buzz")
+      } else {
+        print(i)
+      }
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
