@@ -84,19 +84,19 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-    let outputArr = [];
+    let outputArray = [];
     arr.forEach(input => {
         if (input % 3 === 0 && input % 5 === 0) {
-            outputArr.push('Fizz Buzz')
+            outputArray.push('Fizz Buzz')
         } else if (input % 3 === 0) {
-            outputArr.push('Fizz')
+            outputArray.push('Fizz')
         } else if (input % 5 === 0) {
-            outputArr.push('Buzz')
+            outputArray.push('Buzz')
         } else {
-            outputArr.push(input)
+            outputArray.push(input)
         }
       })
-    return outputArr;
+    return outputArray;
 };
  
       
