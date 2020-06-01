@@ -84,19 +84,23 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
-      if (i % 3) {
-        print("Fizz")
-      } else if (i % 5) {
-        print("Buzz")
-      } else if ( i % (3, 5)) {
-          print("Fizz Buzz")
-      } else {
-        print(i)
-      }
-  }
-  return arr;
+    let outputArr = [];
+    arr.forEach(input => {
+        if (input % 3 === 0 && input % 5 === 0) {
+            outputArr.push('Fizz Buzz')
+        } else if (input % 3 === 0) {
+            outputArr.push('Fizz')
+        } else if (input % 5 === 0) {
+            outputArr.push('Buzz')
+        } else {
+            outputArr.push(input)
+        }
+      })
+    return outputArr;
 };
+ 
+      
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
