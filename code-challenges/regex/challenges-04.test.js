@@ -23,7 +23,7 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const generateSubmitButton = () => {
-  // Solution code here...
+  $("form").append("<input type='submit id='submitbutton type='text'>Submit</input>")
 }
 
 /* ------------------------------------------------------------------------------------------------
