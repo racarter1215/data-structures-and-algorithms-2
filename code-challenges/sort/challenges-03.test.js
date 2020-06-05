@@ -9,7 +9,7 @@ CHALLENGE 1 - Review
 Write a function named changeAllClassNames that uses jQuery to select all each li and add a class of "fruit";
 
 ------------------------------------------------------------------------------------------------ */
-const $ = createSnippetWithJQuery(`
+let $ = createSnippetWithJQuery(`
 <ul id="fruits">
   <li class="apple">Apple</li>
   <li class="orange">Orange</li>
@@ -180,7 +180,7 @@ CHALLENGE 12 - Stretch Goal
 
 Without altering the html, write a function named addPearClass that uses jQuery to add a class of "pear" to the third li.
 ------------------------------------------------------------------------------------------------ */
-const $ = createSnippetWithJQuery(`
+$ = createSnippetWithJQuery(`
 <ul id="fruits">
   <li class="apple">Apple</li>
   <li class="orange">Orange</li>
