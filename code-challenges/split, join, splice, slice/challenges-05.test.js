@@ -37,7 +37,11 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templateWithJQuery = () => {
-  // Solution code here...
+  let template = $('#template');
+  template.content.querySelector('h2').src = 'demo.png';
+  template.content.querySelector('h2').src = 'demo.png';
+  template.content.querySelector('p').textContent= 'demo text';
+
 }
 
 /* ------------------------------------------------------------------------------------------------
