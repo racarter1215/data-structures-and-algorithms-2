@@ -86,7 +86,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 };
 
 const getCourseKeys = (obj) => {
-  obj.courseInfo(obj)
+  return Object.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,7 +97,7 @@ Write a function named getHouses that returns a new array containing the names o
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  arr.forEach(homes => houses.push(homes.house));
   return houses;
 };
 
@@ -114,8 +114,16 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+  let answer = "";
+  arr.forEach(index => {
+    if (character === index.name) {
+      if (Object.values(index)[2] === []) {
+        answer = false;
+      } else {
+        answer = true;
+      }
+    };
+  }); return answer;
 };
 
 /* ------------------------------------------------------------------------------------------------
