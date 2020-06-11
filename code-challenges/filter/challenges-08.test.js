@@ -49,7 +49,7 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  // Solution code here...
+  return arr.filter(vowel => /[aeiou]/.test(vowel));
 };
 
 
@@ -62,7 +62,7 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
+  return arr.filter(missingWord => !forbiddenValues.includes(missingWord));
 };
 
 /* ------------------------------------------------------------------------------------------------
