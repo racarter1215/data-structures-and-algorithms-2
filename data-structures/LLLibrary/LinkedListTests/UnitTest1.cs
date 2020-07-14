@@ -244,6 +244,8 @@ namespace LinkedListTests
         {
             LinkedList list = new LinkedList();
 
+            //Arrange
+
             list.Insert(10);
             list.Insert(20);
             list.Insert(30);
