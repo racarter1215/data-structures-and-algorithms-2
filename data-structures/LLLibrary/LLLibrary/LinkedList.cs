@@ -141,5 +141,31 @@ namespace LLLibrary
             }
             
         }
+
+        public int FindKthFromEnd(int key)
+        {
+            Node walker = Head;
+            Node runner = Head;
+
+            int k = key;
+            while( k > 0)
+            {
+                if(runner.Next != null)
+                {
+                    k--;
+                    runner = runner.Next;
+                }
+                else
+                {
+                    throw new Exception("K is invalid");
+                }
+            }
+            while(runner.Next != null)
+            {
+                walker = walker.Next;
+                runner = runner.Next;
+            }
+            return walker.Value;
+        }
     }
 }
