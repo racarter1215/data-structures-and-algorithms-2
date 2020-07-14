@@ -122,7 +122,7 @@ namespace LLLibrary
                     Current.Next = node;
                     Current = Current.Next;
                 }
-
+                Current = Current.Next;
             }
         }
         
@@ -138,6 +138,7 @@ namespace LLLibrary
                     Current = Current.Next;
 
                 }
+                Current = Current.Next;
             }
             
         }
