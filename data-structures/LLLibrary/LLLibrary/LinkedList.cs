@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.FileIO;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -100,6 +101,14 @@ namespace LLLibrary
                 Current.Next = node;
                 Current = Current.Next;
             }
+        }
+
+        public void PrependNumber(int value)
+        {
+            Node node = new Node(value);
+            Node current = Current;
+            int nodeCounter = 0;
+            while(Current.Value !=  search)
         }
     }
 }
