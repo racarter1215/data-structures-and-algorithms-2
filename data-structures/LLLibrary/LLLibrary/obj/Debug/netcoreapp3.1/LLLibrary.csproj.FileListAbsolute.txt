@@ -7,3 +7,12 @@ C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenge
 C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.csproj.CoreCompileInputs.cache
 C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.dll
 C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.pdb
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.csprojAssemblyReference.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.AssemblyInfoInputs.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.AssemblyInfo.cs
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.csproj.CoreCompileInputs.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.dll
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\obj\Debug\netcoreapp3.1\LLLibrary.pdb
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\bin\Debug\netcoreapp3.1\LLLibrary.deps.json
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\bin\Debug\netcoreapp3.1\LLLibrary.dll
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms-2\data-structures\LLLibrary\LLLibrary\bin\Debug\netcoreapp3.1\LLLibrary.pdb
