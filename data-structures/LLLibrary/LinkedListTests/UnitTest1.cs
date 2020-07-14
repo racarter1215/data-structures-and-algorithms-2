@@ -160,7 +160,62 @@ namespace LinkedListTests
             list.InsertBeforeMiddle(15, 42);
 
             //Arrange
-            string expected = "23 -> 16 -> 42 -> 15 -> 8 -> 4 -> NULL";
+            string expected = "4 -> 8 -> 42 -> 15 -> 16 -> 23 -> NULL";
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+
+        public void InsertNodeBeforeFirstNode()
+        {
+            //Arrange
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(5);
+            list.Insert(6);
+
+            //Act
+            list.InsertBeforeMiddle(6, 7);
+
+            string expected = "7 -> 6 -> 5 -> 4 -> NULL";
+
+            //Assert
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+
+        public void InsertNodeAfterExistingNode()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+            list.Insert(16);
+
+            list.InsertAfterNode(15, 100);
+
+            string expected = "16 -> 15 -> 100 -> 8 -> 4 -> NULL";
+
+            //Assert
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+
+        public void InsertNodeAfterLastNode()
+        {
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+            list.Insert(16);
+
+            list.InsertAfterNode(4, 100);
+
+            string expected = "16 -> 15 -> 8 -> 4 -> 100 -> NULL";
+
+            //Assert
             Assert.Equal(expected, list.ToString());
         }
     }
