@@ -155,6 +155,10 @@ namespace LLLibrary
                     k--;
                     runner = runner.Next;
                 }
+                else
+                {
+                    throw new Exception("K is invalid");
+                }
             }
             while(runner.Next != null)
             {

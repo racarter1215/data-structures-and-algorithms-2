@@ -251,10 +251,11 @@ namespace LinkedListTests
             list.Insert(50);
 
             //Act
-            int value = list.FindKthFromEnd(1);
+            
+            var ex = Assert.Throws<Exception>(() => list.FindKthFromEnd(5));
 
             //Assert
-            Assert.Equal(20, value);
+            Assert.Equal("K is invalid", ex.Message);
         }
     
     }
