@@ -99,16 +99,24 @@ namespace LLLibrary
                     Current = Current.Next;
                 }
                 Current.Next = node;
-                Current = Current.Next;
+                
             }
         }
 
-        public void PrependNumber(int value)
+        public void InsertBeforeMiddle(int value, int insertValue)
         {
-            Node node = new Node(value);
-            Node current = Current;
-            int nodeCounter = 0;
-            while(Current.Value !=  search)
+            Node node = new Node(insertValue);
+            while (Current.Next != null)
+            {
+                if(Current.Next.Value == value)
+                {
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                }
+
+            }
         }
+        
+        
     }
 }
