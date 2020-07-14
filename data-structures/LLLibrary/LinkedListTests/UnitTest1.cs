@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using LLLibrary;
+using System.Transactions;
 
 namespace LinkedListTests
 {
@@ -115,10 +116,9 @@ namespace LinkedListTests
             list.Insert(23);
             list.Insert(42);
             // Act
-            string expectedOutput = "8 -> 15 -> 16 -> 23 -> 42 -> 4 -> NULL";
-            string answer = list.ToString();
+            list.AppendNumber(4);
             // Assert
-            Assert.Equal(expectedOutput, answer);
+            Assert.Equal(4, list.Current.Next.Value);
         }
 
         [Fact]
@@ -136,7 +136,7 @@ namespace LinkedListTests
             list.AppendNumber(31);
 
             //Act
-            string expectedOutcome = "8 -> 15 -> 23 -> 42 -> 16 -> 11 -> 31 -> NULL";
+            string expectedOutcome = "42 -> 23 -> 15 -> 8 -> 16 -> 11 -> 31 -> NULL";
 
             //Assert
             Assert.Equal(expectedOutcome, list.ToString());
