@@ -105,18 +105,41 @@ namespace LLLibrary
 
         public void InsertBeforeMiddle(int value, int insertValue)
         {
-            Node node = new Node(insertValue);
+            Current = Head;
+
+            if(Current.Value == value)
+            {
+                Insert(insertValue);
+                Current = Current.Next;
+            }
+           
             while (Current.Next != null)
             {
                 if(Current.Next.Value == value)
                 {
+                    Node node = new Node(insertValue);
                     node.Next = Current.Next;
                     Current.Next = node;
+                    Current = Current.Next;
                 }
 
             }
         }
         
-        
+        public void InsertAfterNode(int value, int newValue)
+        {
+            while(Current != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    Current = Current.Next;
+
+                }
+            }
+            
+        }
     }
 }
