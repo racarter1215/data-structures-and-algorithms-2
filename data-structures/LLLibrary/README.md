@@ -27,7 +27,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 
 ## Visuals
-[Whiteboard Image](./assets/codechallenge06-whiteboard.png)
+![Whiteboard Image](./assets/codechallenge06-whiteboard.png)
 
 ### Insert Method
 
