@@ -4,9 +4,14 @@ namespace LLZip
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            zipLists();
+        }
+
+        public void zipLists(list1, list2)
+        {
+
         }
     }
 }

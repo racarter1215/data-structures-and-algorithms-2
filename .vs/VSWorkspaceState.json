@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data-structures",
-    "\\data-structures\\LLLibrary",
-    "\\data-structures\\LLLibrary\\assets",
-    "\\data-structures\\LLLibrary\\LLLibrary"
+    "\\challenges",
+    "\\challenges\\ll-zip",
+    "\\challenges\\ll-zip\\LLZip",
+    "\\data-structures\\LLLibrary"
   ],
-  "SelectedNode": "\\data-structures\\LLLibrary\\README.md",
+  "SelectedNode": "\\challenges\\ll-zip\\LLZip\\assets",
   "PreviewInSolutionExplorer": false
 }
