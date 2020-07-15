@@ -3,8 +3,9 @@
     "",
     "\\data-structures",
     "\\data-structures\\LLLibrary",
-    "\\data-structures\\LLLibrary\\assets"
+    "\\data-structures\\LLLibrary\\assets",
+    "\\data-structures\\LLLibrary\\LLLibrary"
   ],
-  "SelectedNode": "\\data-structures\\LLLibrary\\assets",
+  "SelectedNode": "\\data-structures\\LLLibrary\\README.md",
   "PreviewInSolutionExplorer": false
 }
