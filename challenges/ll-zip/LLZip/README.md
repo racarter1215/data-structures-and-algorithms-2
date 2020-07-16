@@ -33,15 +33,19 @@ This is accomplished by taking the values of list2 and inserting them into list1
 
 #### zipLists()
 1. Create variables for two unique Linked Lists (list1 and list2)
-2. Initiate a While loop that will continue to run while the Current node for list1 is not equal to null 
-3. If Current node for list2 is not equal to null, set a temporary variable to Currentlist1.Next
-4. Set Currentlist1.Next to Currentlist2
-5. set Currentlist1.Next.Next to the above temporary variable
-6. Increment both CurrentLists by one
-7. Initiate another while loop that will continue to run while the Current node for list2 is not equal to null
-8. Set Currentlist1 to Currentlist2
-9. Increment both CurrentLists by one
-10. Once both while loops are exited, Return list1
+2. If Currentlist1 is equal to null, set list2 head and current to list 1 head and current, then return list1 head
+3. Initiate a While loop that will continue to run while the Current node for list1 is not equal to null 
+4. If Current node for list2 is not equal to null, set a temporary variable to Currentlist1.Next
+5. Set Currentlist1.Next to Currentlist2
+6. Set list2 head to Currentlist2.Next
+7. Set Currentlist1.Next.Next to the above temporary variable
+8. Set Currentlist2 to list2 head
+9. Else set Currentlis1 to Currentlist1.Next
+10. Increment both CurrentLists by one
+11. If Current node for list2 is not equal to null
+12. Set Currentlist1.Next to Currentlist2
+13. Increment both CurrentLists by one
+14.  Return list1
 
 ### Efficiency
 * Methods that have Big O efficiency O(n) for time
