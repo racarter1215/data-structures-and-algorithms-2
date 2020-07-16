@@ -32,7 +32,7 @@ This is accomplished by taking the values of list2 and inserting them into list1
 ### Approach
 
 #### zipLists()
-1. Create variables for two unique Linked Lists (list1 and list2)
+1. Create new variables for two unique Linked Lists (list1 and list2)
 2. If Currentlist1 is equal to null, set list2 head and current to list 1 head and current, then return list1 head
 3. Initiate a While loop that will continue to run while the Current node for list1 is not equal to null 
 4. If Current node for list2 is not equal to null, set a temporary variable to Currentlist1.Next
