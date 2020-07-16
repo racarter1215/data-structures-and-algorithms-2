@@ -17,4 +17,10 @@
     <ProjectReference Include="..\LLZip\LLZip.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LLLibrary">
+      <HintPath>..\..\..\..\data-structures\LLLibrary\LLLibrary\bin\Debug\netcoreapp3.1\LLLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
