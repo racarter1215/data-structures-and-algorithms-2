@@ -81,7 +81,7 @@ namespace LLLibrary
         /// <summary>
         /// This method adds a new node with the given value to the end of the list.
         /// </summary>
-        /// <param name="value">The int value to be added to the list</param>
+        /// <param name="value">The integer value to be added to the list</param>
         /// <returns>The list with the appended value</returns>
         public void AppendNumber(int value)
         {
