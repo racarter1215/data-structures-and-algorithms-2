@@ -6,14 +6,14 @@ using System.Transactions;
 namespace LinkedListTests
 {
     public class UnitTest1
-    {
+    {//below checks to see if an empty node can be made
         [Fact]
         public void CanInstantiateEmptyLinkedList()
         {
             LinkedList list = new LinkedList();
             Assert.Null(list.Head);
         }
-
+        //below checks to see if an node can be inserted into linked list
         [Fact]
         public void CanInsertIntoLinkedList()
         {
@@ -23,7 +23,7 @@ namespace LinkedListTests
             list.Insert(4);
             Assert.Equal(4, list.Head.Value);
         }
-
+        //below checks to see if multiple nodes can be put into linked list
         [Fact]
         public void CanInsertMultipleNodesInLinkedList()
         {
@@ -38,7 +38,7 @@ namespace LinkedListTests
             Assert.Equal(42, list.Head.Value);
 
         }
-
+        //below checks to see if a value can be found in linked list
         [Fact]
         public void CanFindValueInList()
         {
@@ -60,7 +60,7 @@ namespace LinkedListTests
             Assert.True(exists);
 
         }
-
+        //below shows what happens when a value cannot be found in linked list
         [Fact]
         public void CannotFindValueInLinkedList()
         {
@@ -82,7 +82,7 @@ namespace LinkedListTests
             Assert.False(exists);
 
         }
-
+        //below checks to see if all values in linked list can be returned
         [Fact]
         public void CanReturnAllValuesInLinkedList()
         {
@@ -103,7 +103,7 @@ namespace LinkedListTests
             Assert.Equal(expected, value);
 
         }
-
+        //below checks to see if a linked list can have a node appended to it
         [Fact]
         public void CanAppendToLinkedList()
         {
@@ -122,7 +122,7 @@ namespace LinkedListTests
         }
 
         [Fact]
-
+        //below checks to see if multiple nodes can be appended to it
         public void CanAppendMultipleToLinkedList()
         {
             //Arrange
@@ -141,7 +141,7 @@ namespace LinkedListTests
             //Assert
             Assert.Equal(expectedOutcome, list.ToString());
         }
-
+        //below checks to see if a node can be appended before the middle of a linked list
         [Fact]
 
         public void CanAppendBeforeMiddleLinkedList()
@@ -163,7 +163,7 @@ namespace LinkedListTests
             string expected = "4 -> 8 -> 42 -> 15 -> 16 -> 23 -> NULL";
             Assert.Equal(expected, list.ToString());
         }
-
+        //below checks to see if an node can be inserted before fisrt node in a linked list
         [Fact]
 
         public void InsertNodeBeforeFirstNode()
@@ -182,7 +182,7 @@ namespace LinkedListTests
             //Assert
             Assert.Equal(expected, list.ToString());
         }
-
+        //below checks to see if node can be inserted into a linked list after an existing node
         [Fact]
 
         public void InsertNodeAfterExistingNode()
@@ -200,7 +200,7 @@ namespace LinkedListTests
             //Assert
             Assert.Equal(expected, list.ToString());
         }
-
+        //below checks to see if a node can be inserted after the last node of a linked list
         [Fact]
 
         public void InsertNodeAfterLastNode()
@@ -218,7 +218,7 @@ namespace LinkedListTests
             //Assert
             Assert.Equal(expected, list.ToString());
         }
-
+        //below checks to see if a value can be returned after the "Happy Path" is followed
         [Fact]
 
         public void ItCanReturnValueFromEndOfHappyPath()
@@ -237,7 +237,7 @@ namespace LinkedListTests
             //Assert
             Assert.Equal(20, value);
         }
-
+        //below checks to see if an exception throws from a value of equal list length given
         [Fact]
 
         public void CanReturnExceptionForEqualLength()
@@ -259,6 +259,65 @@ namespace LinkedListTests
             //Assert
             Assert.Equal("K is invalid", ex.Message);
         }
-    
+        //below checks to see if an exception is thrown if the value is larger than length of linked list
+        [Fact]
+
+        public void KIsGreaterThanLengthOfList()
+        {
+            LinkedList list = new LinkedList();
+
+            //Arrange
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            //Act
+            var test = Assert.Throws<Exception>(() => list.FindKthFromEnd(6));
+
+            //Assert
+            Assert.Equal("K is invalid", test.Message);
+        }
+        //below checks to see if an exception is thrown by a negative number
+        [Fact]
+        public void KIsNotPositiveInteger()
+        {
+            LinkedList list = new LinkedList();
+
+            //Arrange
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            //Act
+
+            var ex = Assert.Throws<Exception>(() => list.FindKthFromEnd(-7));
+
+            //Assert
+            Assert.Equal("K is too low", ex.Message);
+        }
+        //below checks to see if an exception is thrown if the linked list is one node long
+        [Fact]
+        public void LinkedListSizeOfOne()
+        {
+            LinkedList list = new LinkedList();
+
+            //Arrange
+
+            list.Insert(10);
+
+            //Act
+
+            int value = list.FindKthFromEnd(0);
+
+            //Assert
+            Assert.Equal(10, value);
+        }
+
     }
 }
