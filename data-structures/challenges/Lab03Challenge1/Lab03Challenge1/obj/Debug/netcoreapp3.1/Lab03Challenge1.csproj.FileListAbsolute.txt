@@ -1,0 +1,13 @@
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\bin\Debug\netcoreapp3.1\Lab03Challenge1.exe
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\bin\Debug\netcoreapp3.1\Lab03Challenge1.deps.json
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\bin\Debug\netcoreapp3.1\Lab03Challenge1.runtimeconfig.json
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\bin\Debug\netcoreapp3.1\Lab03Challenge1.runtimeconfig.dev.json
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\bin\Debug\netcoreapp3.1\Lab03Challenge1.dll
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\bin\Debug\netcoreapp3.1\Lab03Challenge1.pdb
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.csprojAssemblyReference.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.AssemblyInfoInputs.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.AssemblyInfo.cs
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.csproj.CoreCompileInputs.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.dll
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.pdb
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\Lab03Challenge1\Lab03Challenge1\obj\Debug\netcoreapp3.1\Lab03Challenge1.genruntimeconfig.cache

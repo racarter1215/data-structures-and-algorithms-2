@@ -1,0 +1,6 @@
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\ArrayShift\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.csprojAssemblyReference.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\ArrayShift\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.AssemblyInfoInputs.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\ArrayShift\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.AssemblyInfo.cs
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\ArrayShift\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.csproj.CoreCompileInputs.cache
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\ArrayShift\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.dll
+C:\Users\racar\codefellows\102\projects\data-structures-and-algorithms\challenges\ArrayShift\ArrayShift\obj\Debug\netcoreapp3.1\ArrayShift.pdb
