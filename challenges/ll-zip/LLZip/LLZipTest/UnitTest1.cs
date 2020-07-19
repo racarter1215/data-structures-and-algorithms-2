@@ -6,7 +6,7 @@ using static LLZip.Program;
 namespace LLZipTest
 {
     public class UnitTest1
-    {
+    {//below tests if the lists can be ziped together in an alternating patter
         [Fact]
         public void Test1()
         {
@@ -32,6 +32,7 @@ namespace LLZipTest
             Assert.Equal(expected, linkedListResult.ToString());
 
         }
+        //below tests if the lists can be zipped together in an alternating pattern if they start at different lengths
         [Fact]
         public void Test2()
         {
@@ -56,6 +57,7 @@ namespace LLZipTest
 
             Assert.Equal(expected, linkedListResult.ToString());
         }
+        //below tests if the lists can be zipped together in an alternating pattern if one list is empty
 
         [Fact]
         public void Test3()

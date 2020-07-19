@@ -5,12 +5,20 @@ using LLLibrary;
 namespace LLZip
 {
     public class Program
-    {
+    {   /// <summary>
+        /// The main method is empty for this application
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static void Main(string[] args)
         {
             
         }
-
+        /// <summary>
+        /// The following method takes two linked lists and converts them into one joint list, alternating node values
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns>the new joined linked list</returns>
         public static Node zipLists(LinkedList list1, LinkedList list2)
         {
             list1.Current = list1.Head;
