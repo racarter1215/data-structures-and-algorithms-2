@@ -27,6 +27,30 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 ### Approach
 
+#### AppendNumber()
+1. Set Current to Head
+2. If Head is equal to null, set Heat to node
+3. Else, while Current.Next is not equal to null, set Current to Current.Next
+4. Set Current.Next to node
+
+#### InsertBeforeMiddle()
+1. Set Current to Head
+2. If Current.Value = value, run Insert method passing the insertValue, then set Current to Current.Next
+3. While Current.Next is not equal to null, if Current.Next.Value is equal to value...
+4. Create a new node, passing in insertValue
+5. Set Node.Next to Current.Next
+6. Set Current.Next to node
+7. Set Current to Current.Next
+8. Outside of while loop set Current to Current.Next
+
+#### InsertAfterNode()
+1. While Current is not equal to null...
+2. If Current.Value is equal to value, create a new node passing in newValue
+3. Set node.Next to Current.Next
+4. Set Current.Next to node
+5. Set Current to Current.Next
+6. Ouside of loop set Current to Current.Next
+
 #### FindKthFromEnd()
 1. Set values of walker, runner and set them to Head
 2. Created key parameter for use to iterate while loop. 
@@ -37,16 +61,25 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 6. Return the value of walker after while loop is exited.
 
 ### Efficiency
+* Methods that have Big O efficiency O(1) for time
+  * AppendNumber(). Because we are adding a node to a linear Linked List, it requires more complex action
+  * InsertBeforeMiddle().  Because we are adding a node to a linear Linked List, it requires more complex action
+  * InsertAfterNode().  Because we are adding a node to a linear Linked List, it requires more complex action
+  
 * Methods that have Big O efficiency O(n) for time
   * FindKthFromEnd(). Because we are iterating through a linear Linked List, we do not have to navigate over additional lists or nodes.
+  
 * Methods that have Big O efficiency O(n) for space
-
+  * AppendNumber(). Because it requires only adding a single node, it doesn't add a large amount of space.
+  * InsertBeforeMiddle(). Because it requires only adding a single node, it doesn't add a large amount of space.
+  * InsertAfterNode(). Because it requires only adding a single node, it doesn't add a large amount of space.
+  
 * Methods that have Big O efficiency O(1) for space
   * FindKthFromEnd(). Because we are simply accessing the value of an existing node and returning it, we aren't creating any additional nodes.
   
 ## Visuals
 ![Whiteboard Image](./assets/codechallenge06-whiteboard.png)
-![Whiteboard Image](./assets/codechallenge07-whiteboard.png
+![Whiteboard Image](./assets/codechallenge07-whiteboard.png)
 
 ### Insert Method
 
@@ -67,5 +100,5 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 
 ## Change Log
-
+1.1 Finished both Challenge 6 and 7, with tests - 19 July 2020
 ---
