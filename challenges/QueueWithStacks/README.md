@@ -1,9 +1,9 @@
-# Code Challenge 08: Zip Linked Lists
+# Code Challenge 11: Queue in Stacks
 ---
 
-## Linked List - Zip
+## Queue in Two Stacks
 
-*Authors: Robert Carter and Nicholas Ryan*
+*Authors: Robert Carter, Paul Rest, Michael Refvem*
 
 ---
 
@@ -24,7 +24,7 @@ This is accomplished by taking the values of list2 and inserting them into list1
 
 | Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| zipLists | Adds node values from one linked list into another at alternating intervals | O(n) | O(1) | zipLists(list1, list2) |
+| zipLists | Adds node values from one linked list into another at alternating intervals | O(1) | O(1) | zipLists(list1, list2) |
 
 
 
@@ -55,13 +55,13 @@ This is accomplished by taking the values of list2 and inserting them into list1
   * zipLists(). Because we are transfering data from one list to another in a way that requires constant coordination between current nodes, space is more complex than O(n), hence the greater rating. 
   
 ## Solution
-![Whiteboard Image](./assets/codechallenge08-whiteboard.png)
+![Whiteboard Image](./assets/codechallenge11-whiteboard.png)
 
 ---
 
 ## Change Log
 
-1.1 Initial submission of app - 15 July 2020
+1.1 Initial submission of app - 20 July 2020
 
 ---
 
