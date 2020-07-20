@@ -9,8 +9,8 @@
 
 ## Summary
 
-Linked Lists are linear data structures which stores elements in a non-contiguous location. One can iterate through them using the Head(first node in list), Current(the node you are at currently within a list), and Next(the command to move from one node to another). 
-While we have so far manipulated data returns from one list, on this app we now manipulate the data returns of two Linked Lists by combining their nodes into one list.
+Stacks and Queues are two forms of data structures that require data input and manipulation in different ways. For stacks, you can add nodes with the Push method, and with queues, you can add a node to the queue with Enqueue.
+I wrote tests for several eventualities such as pushing or enqueuing multiple nodes, as well as dequeueing nodes.
 
 ## Description
 
@@ -32,20 +32,15 @@ This is accomplished by taking the values of list2 and inserting them into list1
 ### Approach
 
 #### Push()
-1. Create new variables for two unique Linked Lists (list1 and list2)
-2. If Currentlist1 is equal to null, set list2 head and current to list 1 head and current, then return list1 head
-3. Initiate a While loop that will continue to run while the Current node for list1 is not equal to null 
-4. If Current node for list2 is not equal to null, set a temporary variable to Currentlist1.Next
-5. Set Currentlist1.Next to Currentlist2
-6. Set list2 head to Currentlist2.Next
-7. Set Currentlist1.Next.Next to the above temporary variable
-8. Set Currentlist2 to list2 head
-9. Else set Currentlis1 to Currentlist1.Next
-10. Increment both CurrentLists by one
-11. If Current node for list2 is not equal to null
-12. Set Currentlist1.Next to Currentlist2
-13. Increment both CurrentLists by one
-14.  Return list1
+1. Create a new node
+2. node.Next is set to the Top node
+3. Top is set to node
+
+#### Enqueue()
+1. Create a new node
+2. if Front is equal to null, Front and Rear are set to node
+3. Else, rear.Next is set to node
+4. Rear is set to node.
 
 ### Efficiency
 * Methods that have Big O efficiency O(1) for time
