@@ -14,8 +14,8 @@ I wrote tests for several eventualities such as pushing or enqueuing multiple no
 
 ## Description
 
-A C# implementation of the combination of two Linked Lists. The purpose of this app is to take two Linked Lists and combine their nodes in an alternating pattern. 
-This is accomplished by taking the values of list2 and inserting them into list1 at the appropriate intervals.
+A C# implementation of the Push of nodes into a Stack and the Enqueueing of nodes into a Queue. The purpose of this app is to take a newly created node and Push it into a Stack (testing for a variety of ways to do this) and Enqueue a node into a Queue (testing for a variety of ways to do this)
+This is accomplised by creating new nodes and setting them to either the Top of a Stack or the Rear of a Queue.
 
 
 ---
@@ -24,8 +24,8 @@ This is accomplished by taking the values of list2 and inserting them into list1
 
 | Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| Push | Adds node values from one linked list into another at alternating intervals | O(n) | O(1) | zipLists(list1, list2) |
-
+| Push | Adds a node to the Top of a Stack | O(1) | O(1) | Push() |
+| Enqueue | Adds a node to the Rear of a Queue | O(1) | O(1) | Push() |
 
 
 ---
@@ -43,11 +43,15 @@ This is accomplished by taking the values of list2 and inserting them into list1
 4. Rear is set to node.
 
 ### Efficiency
-* Methods that have Big O efficiency O(1) for time
-  * zipLists(). Because we are only iterating through two linear Linked Lists, we do not have to navigate over additional lists or nodes.
+* Methods that have Big O efficiency O(n) for time
+  * Push(). Because we are only testing a single stack and nothing more complex, it is efficient for time
+  * Queue(). Because we are only testing a single queue and nothing more complex, it is efficient for time
 
 * Methods that have Big O efficiency O(1) for space
-  * zipLists(). Because we are transfering data from one list to another in a way that requires constant coordination between current nodes, space is more complex than O(n), hence the greater rating. 
+  * Push(). Because we are only adding one or a few nodes to an existing stack, it doens't require much space
+  * Queue(). Because we are enqueuing one or a few nodes to an existing queue, it doesn't require much space
+
+  
   
 ## Solution
 No whiteboard was needed for this assignment
