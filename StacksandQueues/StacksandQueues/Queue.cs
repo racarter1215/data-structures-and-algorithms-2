@@ -13,7 +13,10 @@ namespace StacksAndQueues
         {
             Rear = Front;
         }
-
+        /// <summary>
+        /// the below method pushes a node into a queue
+        /// </summary>
+        /// <param name="value"></param>
         public void Enqueue(string value)
         {
             // Create a new Node
