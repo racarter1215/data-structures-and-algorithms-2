@@ -7,3 +7,5 @@
 ### Challenge 5: Linked-List
 
 ### Challenge 6: Linked-List Implementation
+
+### Challenge 10: Stacks and Queues
