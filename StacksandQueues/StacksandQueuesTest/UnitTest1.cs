@@ -12,10 +12,26 @@ namespace XUnitTestProject1
             // Arrange
             Stack stack = new Stack();
             // Act
-            stack.Push("candy cane");
+            stack.Push("first test");
             // Assert
 
-            Assert.Equal("candy cane", stack.Top.Value);
+            Assert.Equal("first test", stack.Top.Value);
+            Assert.NotNull(stack.Top.Value);
+
+        }
+
+        [Fact]
+        public void CanPushMultipleOnStack()
+        {
+            // Arrange
+            Stack stack = new Stack();
+            // Act
+            var answer1 = stack.Push("first test");
+            answer2 = stack.Push("second test");
+            stack.Push("second test");
+            // Assert
+
+            Assert.Equal(answer, stack.Top.Value);
             Assert.NotNull(stack.Top.Value);
 
         }

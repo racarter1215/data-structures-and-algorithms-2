@@ -17,11 +17,25 @@ namespace XUnitTestProject1
             Queue que = new Queue();
 
             // Act
-            que.Enqueue("Josie Cat");
-            que.Enqueue("Belle Kitty");
+            que.Enqueue("test 1");
+            que.Enqueue("test 2");
 
             // Assert
-            Assert.Equal("Josie Cat", que.Front.Value);
+            Assert.Equal("test", que.Front.Value);
         }
+        [Fact]
+        public void CanEnqueueMultipleIntoQueue()
+        {
+            // Arrange
+            Queue que = new Queue();
+
+            // Act
+            que.Enqueue("test 1");
+            que.Enqueue("test 2");
+
+            // Assert
+            Assert.Equal("test 1", que.Front.Value);
+        }
+
     }
 }
