@@ -1,9 +1,9 @@
-# Code Challenge 08: Zip Linked Lists
+# Code Challenge 10: Stacks and Queues
 ---
 
-## Linked List - Zip
+## Stacks and Queues
 
-*Authors: Robert Carter and Nicholas Ryan*
+*Authors: Robert Carter (Amanda Iverson source code)
 
 ---
 
@@ -24,14 +24,14 @@ This is accomplished by taking the values of list2 and inserting them into list1
 
 | Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| zipLists | Adds node values from one linked list into another at alternating intervals | O(n) | O(1) | zipLists(list1, list2) |
+| Push | Adds node values from one linked list into another at alternating intervals | O(n) | O(1) | zipLists(list1, list2) |
 
 
 
 ---
 ### Approach
 
-#### zipLists()
+#### Push()
 1. Create new variables for two unique Linked Lists (list1 and list2)
 2. If Currentlist1 is equal to null, set list2 head and current to list 1 head and current, then return list1 head
 3. Initiate a While loop that will continue to run while the Current node for list1 is not equal to null 
@@ -48,20 +48,20 @@ This is accomplished by taking the values of list2 and inserting them into list1
 14.  Return list1
 
 ### Efficiency
-* Methods that have Big O efficiency O(n) for time
+* Methods that have Big O efficiency O(1) for time
   * zipLists(). Because we are only iterating through two linear Linked Lists, we do not have to navigate over additional lists or nodes.
 
 * Methods that have Big O efficiency O(1) for space
   * zipLists(). Because we are transfering data from one list to another in a way that requires constant coordination between current nodes, space is more complex than O(n), hence the greater rating. 
   
 ## Solution
-![Whiteboard Image](./assets/codechallenge08-whiteboard.png)
+No whiteboard was needed for this assignment
 
 ---
 
 ## Change Log
 
-1.1 Initial submission of app - 15 July 2020
+1.1 Initial submission of app - 20 July 2020
 
 ---
 
