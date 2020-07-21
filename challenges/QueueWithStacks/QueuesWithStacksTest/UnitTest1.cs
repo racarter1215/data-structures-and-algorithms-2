@@ -5,7 +5,9 @@ using Xunit;
 namespace QueuesWithStacksTest
 {
     public class UnitTest1
-    {
+    {/// <summary>
+    /// below method checks that one can enqueue placed values on odd number placements
+    /// </summary>
         [Fact]
         public void EnqueueOddNumberValueTest()
         {
@@ -26,6 +28,9 @@ namespace QueuesWithStacksTest
             Assert.Equal(answer1, test.Dequeue());
         }
 
+        /// <summary>
+        /// below method checks that one can enqueue placed values on even number placements
+        /// </summary>
         [Fact]
         public void EnqueueEvenNumberValueTest()
         {
@@ -45,7 +50,9 @@ namespace QueuesWithStacksTest
             //Assert
             Assert.Equal(answer1, test.Dequeue());
         }
-
+        /// <summary>
+        /// below method checks that one can enqueue multiple values at once
+        /// </summary>
         [Fact]
         public void EnqueueMultipleNumberValueTest()
         {
@@ -71,7 +78,9 @@ namespace QueuesWithStacksTest
             //Assert
             Assert.Equal(answer5, test.Dequeue());
         }
-
+        /// <summary>
+        /// below method checks that one can enqueue and dequeue values on alternating pattern
+        /// </summary>
         [Fact]
         public void AlternatingEnqueueDequeueNumberValueTest()
         {
@@ -102,7 +111,9 @@ namespace QueuesWithStacksTest
             //Assert
             Assert.Equal(answer4, test.Dequeue());
         }
-
+        /// <summary>
+        /// below method checks that the throw exception in dequeue() works
+        /// </summary>
         [Fact]
         public void DequeueThrowExceptionTest()
         {

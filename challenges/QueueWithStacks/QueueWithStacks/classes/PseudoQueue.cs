@@ -22,6 +22,10 @@ namespace QueueWithStacks
 			Count = 0;
             StackOneLastPopped = false;
 		}
+        /// <summary>
+        /// the below method allows for a value to be placed into the PseudoQueue
+        /// </summary>
+        /// <param name="value"></param>
 		public void Enqueue(string value)
 		{
             int depth = Count / 2;
@@ -38,7 +42,10 @@ namespace QueueWithStacks
             }
             Count++;
 		}
-
+        /// <summary>
+        /// the below method removes an value from the PseudoQueue
+        /// </summary>
+        /// <returns>the removed value</returns>
         public string Dequeue()
         {
             try
