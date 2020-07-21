@@ -37,19 +37,9 @@ namespace QueueWithStacks
                 shuffledStack.Push(temp.Pop());
             }
             Count++;
-			SwapNodes();
-			if (Count % 2 == 0)
-            {
-				StackOne.Push(value);
-            }
-			else 
-            {
-				StackTwo.Push(value);
-            }
-			Count++;
 		}
 
-        private string Dequeue()
+        public string Dequeue()
         {
             try
             {
