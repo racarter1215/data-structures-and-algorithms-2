@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic.FileIO;
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -102,7 +102,11 @@ namespace LLLibrary
                 
             }
         }
-
+        /// <summary>
+        /// below is a method that inserts a node into a linked list before first value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="insertValue"></param>
         public void InsertBeforeMiddle(int value, int insertValue)
         {
             Current = Head;
@@ -125,7 +129,11 @@ namespace LLLibrary
                 Current = Current.Next;
             }
         }
-        
+        /// <summary>
+        /// below is a method that inserts node after first value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newValue"></param>
         public void InsertAfterNode(int value, int newValue)
         {
             while(Current != null)
@@ -142,14 +150,22 @@ namespace LLLibrary
             }
             
         }
-
+        /// <summary>
+        /// below is a method that displays which node space a value is at. i.e. a ll of 10->20->30 with a k of 1 returns 20.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>an integer expressing the place value</returns>
         public int FindKthFromEnd(int key)
         {
             Node walker = Head;
             Node runner = Head;
 
             int k = key;
-            while( k > 0)
+            if (k < 0)
+            {
+                throw new Exception("K is too low");
+            }
+            while(k > 0)
             {
                 if(runner.Next != null)
                 {
