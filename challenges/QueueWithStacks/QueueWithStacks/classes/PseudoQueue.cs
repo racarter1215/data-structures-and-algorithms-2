@@ -6,22 +6,37 @@ using System.Text;
 using System.Threading;
 using StacksAndQueues;
 
-namespace QueueWithStacks.classes
+namespace QueueWithStacks
 {
     public class PseudoQueue
     {
-        public Stack StackOne { get; set; }
-        public Stack StackTwo { get; set; }
-        public int Count { get; set; }
+        private Stack StackOne { get; set; }
+        private Stack StackTwo { get; set; }
+        private int Count { get; set; }
+        private bool StackOneLastPopped { get; set; }
 
 		public PseudoQueue()
 		{
 			StackOne = new Stack();
 			StackTwo = new Stack();
 			Count = 0;
+            StackOneLastPopped = false;
 		}
 		public void Enqueue(string value)
 		{
+            int depth = Count / 2;
+            Stack shuffledStack = Count % 2 == 0 ? StackOne : StackTwo;
+            Stack temp = new Stack();
+            for (int i = 0; i < depth; i++)
+            {
+                temp.Push(shuffledStack.Pop());
+            }
+            shuffledStack.Push(value);
+            for (int j = 0; j < depth; j++)
+            {
+                shuffledStack.Push(temp.Pop());
+            }
+            Count++;
 			SwapNodes();
 			if (Count % 2 == 0)
             {
@@ -34,52 +49,28 @@ namespace QueueWithStacks.classes
 			Count++;
 		}
 
-		private void SwapNodes()
-        {
-			bool even = Count % 2 == 0;
-			Stack temp = new Stack();
-			for(int i = 0; i < Count; i++)
-            {
-				if (even)
-                {
-					temp.Push(StackTwo.Pop());
-                }
-				else
-                {
-					temp.Push(StackOne.Pop());
-                }
-            }
-			for(int j = 0; j < Count; j++)
-            {
-                if (even)
-				{
-					StackOne.Push(temp.Pop());
-                }
-                else
-                {
-					StackTwo.Push(temp.Pop());
-                }
-            }
-
-        }
-
-		private string Dequeue()
+        private string Dequeue()
         {
             try
             {
-
-                if (Count % 2 == 0)
+                string returnValue;
+                if (StackOneLastPopped)
                 {
-                    return StackOne.Pop();
+                    StackOneLastPopped = !StackOneLastPopped;
+                    returnValue = StackTwo.Pop();
                 }
                 else
                 {
-                    return StackTwo.Pop();
+                    StackOneLastPopped = !StackOneLastPopped;
+                    returnValue = StackOne.Pop();
                 }
+                Count--;
+                return returnValue;
             }
             catch (NullReferenceException e)
             {
                 throw e;
             }
+        }
 	}
 }
