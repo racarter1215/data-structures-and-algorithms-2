@@ -1,4 +1,4 @@
-using QueueWithStacks.classes;
+using QueueWithStacks;
 using System;
 using Xunit;
 
@@ -7,7 +7,7 @@ namespace QueuesWithStacksTest
     public class UnitTest1
     {
         [Fact]
-        public void HappyPathTest()
+        public void EnqueueOddNumberValueTest()
         {
             //Arrange
             PseudoQueue test = new PseudoQueue();
@@ -23,7 +23,7 @@ namespace QueuesWithStacksTest
             test.Enqueue(answer4);
             test.Enqueue(answer5);
             //Assert
-            Assert.Equal()
+            Assert.Equal(answer1, test.Dequeue());
         }
     }
 }
