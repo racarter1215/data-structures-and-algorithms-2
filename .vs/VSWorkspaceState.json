@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\ll-zip",
-    "\\challenges\\ll-zip\\LLZip",
-    "\\challenges\\ll-zip\\LLZip\\assets",
-    "\\challenges\\ll-zip\\LLZip\\LLZip"
+    "\\challenges\\QueueWithStacks",
+    "\\challenges\\QueueWithStacks\\QueueWithStacks",
+    "\\challenges\\QueueWithStacks\\QueueWithStacks\\classes"
   ],
-  "SelectedNode": "\\challenges\\ll-zip\\LLZip\\LLZip\\Program.cs",
+  "SelectedNode": "\\challenges\\QueueWithStacks\\QueueWithStacks\\classes\\PseudoQueue.cs",
   "PreviewInSolutionExplorer": false
 }

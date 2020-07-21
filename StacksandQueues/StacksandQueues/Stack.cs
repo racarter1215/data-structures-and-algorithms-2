@@ -19,5 +19,19 @@ namespace StacksAndQueues
             Top = node;
 
         }
+
+        public string Pop()
+        {
+            try
+            {
+                Node temp = Top;
+                Top = Top.Next;
+                return temp.Value;
+            }
+            catch(NullReferenceException a)
+            {
+                throw a;
+            }
+        }
     }
 }
