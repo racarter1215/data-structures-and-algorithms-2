@@ -9,3 +9,7 @@
 ### Challenge 6: Linked-List Implementation
 
 ### Challenge 10: Stacks and Queues
+
+### Challenge 11: Queue with Stacks
+
+### Challenge 12: FIFO Animal Shelter
