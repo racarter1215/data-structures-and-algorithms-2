@@ -24,7 +24,7 @@ The purpose of this app is to ensure that nodes with string values can be added 
 
 ## Methods
 
-| Method | Summary | Big O Time | Big O Space | Example | 
+| Method | Summary | Big O: Time | Big O: Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
 | enqueue | Adds a node containing a new value to a queue | O(n) | O(n) | enqueue(string value) |
 | dequeue | Returns value of the preferred animal, either dog or cat. If neither, null | O(1) | O(1) | dequeue() |
