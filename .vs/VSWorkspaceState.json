@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\Fifo-Animal-Shelter",
-    "\\challenges\\QueueWithStacks\\QueueWithStacks",
-    "\\challenges\\QueueWithStacks\\QueueWithStacks\\classes"
+    "\\challenges\\MultiBracketValidation",
+    "\\challenges\\MultiBracketValidation\\assets"
   ],
-  "SelectedNode": "\\challenges\\Fifo-Animal-Shelter\\README.md",
+  "SelectedNode": "\\challenges\\MultiBracketValidation\\assets\\codechallenge13-whiteboard.png",
   "PreviewInSolutionExplorer": false
 }
