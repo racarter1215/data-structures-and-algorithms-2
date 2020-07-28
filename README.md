@@ -9,3 +9,7 @@
 ### Challenge 6: Linked-List Implementation
 
 ### Challenge 10: Stacks and Queues
+
+### Challenge 11: Queues with Stacks
+
+### Challenge 15: Binary Tree and BST Implementation
