@@ -18,7 +18,11 @@ namespace tree.Trees
             Node<T> root = new Node<T>(value);
             Root = root;
         }
-
+        /// <summary>
+        /// checks to see if tree has values, and if so, sets up a PreOrder traversal with a blank list
+        /// </summary>
+        /// <param name="root">the top number of a tree</param>
+        /// <returns>the traversal list of values</returns>
         public List<T> PreOrder(Node<T> root)
         {
             if (root.LeftChild == null && root.RightChild == null)
@@ -29,7 +33,11 @@ namespace tree.Trees
             PreOrder(traversal, root);
             return traversal;
         }
-
+        /// <summary>
+        /// this allows one to traverse a tree from the root down (left, then right)
+        /// </summary>
+        /// <param name="traversal">the traversal value list</param>
+        /// <param name="root">the top number of the tree</param>
         private void PreOrder(List<T> traversal, Node<T> root)
         {
             traversal.Add(root.Value);
@@ -44,6 +52,11 @@ namespace tree.Trees
             }
         }
 
+        /// <summary>
+        /// checks to see if tree has values, and if so, sets up an InOrder traversal with a blank list
+        /// </summary>
+        /// <param name="root">the top number of a tree</param>
+        /// <returns>the traversal list of values</returns>
         public List<T> InOrder(Node<T> root)
         {
             if (root.LeftChild == null && root.RightChild == null)
@@ -54,7 +67,10 @@ namespace tree.Trees
             InOrder(traversal, root);
             return traversal;
         }
-
+        /// <summary>
+        /// this allows one to traverse a tree from the bottom left up (left, then when right child found, right)
+        /// <param name="traversal">the traversal value list</param>
+        /// <param name="root">the top number of the tree</param>
         private void InOrder(List<T> traversal, Node<T> root)
         {            
             if (root.LeftChild != null)
@@ -69,6 +85,11 @@ namespace tree.Trees
                 InOrder(traversal, root.RightChild);
             }
         }
+        /// <summary>
+        /// checks to see if tree has values, and if so, sets up an PostOrder traversal with a blank list
+        /// </summary>
+        /// <param name="root">the top number of a tree</param>
+        /// <returns>the traversal list of values</returns>
         public List<T> PostOrder(Node<T> root)
         {
             if (root.LeftChild == null && root.RightChild == null)
@@ -79,7 +100,10 @@ namespace tree.Trees
             PostOrder(traversal, root);
             return traversal;
         }
-
+        /// <summary>
+        /// this allows one to traverse a tree from the bottom left up (left, then right, even if you didn't discover it from a root)
+        /// <param name="traversal">the traversal value list</param>
+        /// <param name="root">the top number of the tree</param>
         private void PostOrder(List<T> traversal, Node<T> root)
         {
             if (root.LeftChild != null)
