@@ -1,21 +1,22 @@
-# Code Challenge 10: Stacks and Queues
+# Code Challenge 15: Binary Tree and BST Implementation
 ---
 
-## Stacks and Queues
+## Binary Tree and BST Implementation
 
-*Authors: Robert Carter (Amanda Iverson source code)
+*Authors: Robert Carter (Amanda Iverson partial source code)
+*Collaboration with: Bryant Davis
 
 ---
 
 ## Summary
 
-Stacks and Queues are two forms of data structures that require data input and manipulation in different ways. For stacks, you can add nodes with the Push method, and with queues, you can add a node to the queue with Enqueue.
-I wrote tests for several eventualities such as pushing or enqueuing multiple nodes, as well as dequeueing nodes.
+Tree traversals are important ways to find and list data. 
+I wrote tests for several types of tree traversals to verify they will work given a tree.
 
 ## Description
 
-A C# implementation of the Push of nodes into a Stack and the Enqueueing of nodes into a Queue. The purpose of this app is to take a newly created node and Push it into a Stack (testing for a variety of ways to do this) and Enqueue a node into a Queue (testing for a variety of ways to do this)
-This is accomplised by creating new nodes and setting them to either the Top of a Stack or the Rear of a Queue.
+A C# implementation of the PreOrder, InOrder, and PostOrder tree traversal methods. The purpose of this app is to traverse a given tree in a variety of ways.
+This is accomplised by creating new trees and utilizing PreOrder (root down), InOrder(bottom left up, then right), and PostOrder(bottom left, then left, right going up to root).
 
 
 ---
@@ -24,32 +25,47 @@ This is accomplised by creating new nodes and setting them to either the Top of 
 
 | Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| Push | Adds a node to the Top of a Stack | O(1) | O(1) | Push() |
-| Enqueue | Adds a node to the Rear of a Queue | O(1) | O(1) | Push() |
+| PreOrder | Starts at root and traverses tree | O(n) | O(1) | PreOrder() |
+| InOrder | Starts at bottom left leaf and goes up and down tree | O(n) | O(1) | InOrder() |
+  PostOrder | Starts at bottom left leaft and goes left to right all the way up to root | O(n) | O(1) | PostOrder() |
 
 
 ---
 ### Approach
 
-#### Push()
-1. Create a new node
-2. node.Next is set to the Top node
-3. Top is set to node
+#### PreOrder()
+1. Create a new tree
+2. Traverse tree starting from root
+3. If left child exists, traverse to leaf
+4. If right child exists, traverse to leaf
+5. Return traversal
 
-#### Enqueue()
-1. Create a new node
-2. if Front is equal to null, Front and Rear are set to node
-3. Else, rear.Next is set to node
-4. Rear is set to node.
+#### InOrder()
+1. Create a new tree
+2. Traverse tree starting from bottom left leaf
+3. If left child exists, traverse to leaf
+4. If right child exists, traverse to leaf
+5. Return traversal
+
+#### PostOrder()
+1. Create a new tree
+2. Traverse tree starting from root
+3. If left child exists, traverse to leaf
+4. If right child exists, even if root not reached, traverse to leaf
+5. End traversal at root
+5. Return traversal
+
 
 ### Efficiency
 * Methods that have Big O efficiency O(n) for time
-  * Push(). Because we are only testing a single stack and nothing more complex, it is efficient for time
-  * Queue(). Because we are only testing a single queue and nothing more complex, it is efficient for time
+  * PreOrder(). Because we are only traversing a single tree and nothing more complex, it is efficient for time
+  * InOrder(). Because we are only traversing a single tree and nothing more complex, it is efficient for time
+  * PostOrder(). Because we are only traversing a single tree and nothing more complex, it is efficient for time
 
-* Methods that have Big O efficiency O(1) for space
-  * Push(). Because we are only adding one or a few nodes to an existing stack, it doens't require much space
-  * Queue(). Because we are enqueuing one or a few nodes to an existing queue, it doesn't require much space
+* Methods that have Big O efficiency O(H) for space
+  * PreOrder(). Trees can be of varying height, so space is determined by height
+  * InOrder(). Trees can be of varying height, so space is determined by height
+  * PostOrder(). Trees can be of varying height, so space is determined by height
 
   
   
@@ -60,7 +76,7 @@ No whiteboard was needed for this assignment
 
 ## Change Log
 
-1.1 Initial submission of app - 20 July 2020
+1.1 Initial submission of app - 27 July 2020
 
 ---
 
