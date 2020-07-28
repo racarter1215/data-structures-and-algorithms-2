@@ -21,6 +21,10 @@ namespace tree.Trees
 
         public List<T> PreOrder(Node<T> root)
         {
+            if (root.LeftChild == null && root.RightChild == null)
+            {
+                throw new Exception("there are no values in this tree");
+            }
             List<T> traversal = new List<T>();
             PreOrder(traversal, root);
             return traversal;
@@ -42,6 +46,10 @@ namespace tree.Trees
 
         public List<T> InOrder(Node<T> root)
         {
+            if (root.LeftChild == null && root.RightChild == null)
+            {
+                throw new Exception("there are no values in this tree");
+            }
             List<T> traversal = new List<T>();
             InOrder(traversal, root);
             return traversal;
@@ -63,6 +71,10 @@ namespace tree.Trees
         }
         public List<T> PostOrder(Node<T> root)
         {
+            if (root.LeftChild == null && root.RightChild == null)
+            {
+                throw new Exception("there are no values in this tree");
+            }
             List<T> traversal = new List<T>();
             PostOrder(traversal, root);
             return traversal;
