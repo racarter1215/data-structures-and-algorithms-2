@@ -13,7 +13,7 @@ namespace XUnitTestProject1
         public void MakesEmptyTree()
         {
             //Arrange
-            Tree<string> result = new Tree<string>();
+            BinaryTree<string> result = new BinaryTree<string>();
 
             //Assert
             Assert.Null(result.Root);
@@ -25,7 +25,7 @@ namespace XUnitTestProject1
         public void MakesTreeWithOneRoot()
         {
             //Arrange
-            Tree<string> result = new Tree<string>("One String");
+            BinaryTree<string> result = new BinaryTree<string>("One String");
 
             //Assert
             Assert.NotNull(result.Root);
@@ -39,7 +39,7 @@ namespace XUnitTestProject1
         public void AddLeftRightRoot()
         {
             //Arrange
-            Tree<char> result = new Tree<char>('a');
+            BinaryTree<char> result = new BinaryTree<char>('a');
             Node<char> leftChild = new Node<char>('b');
             Node<char> rightChild = new Node<char>('c');
 
@@ -59,7 +59,7 @@ namespace XUnitTestProject1
         public void ReturnsPreOrder()
         {
             //Arrange
-            Tree<char> result = new Tree<char>();
+            BinaryTree<char> result = new BinaryTree<char>();
             Node<char> rootNumber = new Node<char>('a');
             Node<char> b = new Node<char>('b');
             Node<char> c = new Node<char>('c');
@@ -94,7 +94,7 @@ namespace XUnitTestProject1
         public void ReturnsInOrder()
         {
             //Arrange
-            Tree<char> result = new Tree<char>();
+            BinaryTree<char> result = new BinaryTree<char>();
             Node<char> rootNumber = new Node<char>('a');
             Node<char> b = new Node<char>('b');
             Node<char> c = new Node<char>('c');
@@ -129,7 +129,7 @@ namespace XUnitTestProject1
         public void ReturnsPostOrder()
         {
             //Arrange
-            Tree<char> result = new Tree<char>();
+            BinaryTree<char> result = new BinaryTree<char>();
             Node<char> rootNumber = new Node<char>('a');
             Node<char> b = new Node<char>('b');
             Node<char> c = new Node<char>('c');

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "find-maximum-binary-tree", "find-maximum-binary-tree\find-maximum-binary-tree.csproj", "{6BE334AA-E8E9-43A6-98F1-E15CC34CD6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{ED91F0A2-BD02-45B0-8A3F-B1F88FE47A3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BE334AA-E8E9-43A6-98F1-E15CC34CD6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE334AA-E8E9-43A6-98F1-E15CC34CD6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE334AA-E8E9-43A6-98F1-E15CC34CD6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE334AA-E8E9-43A6-98F1-E15CC34CD6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED91F0A2-BD02-45B0-8A3F-B1F88FE47A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED91F0A2-BD02-45B0-8A3F-B1F88FE47A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED91F0A2-BD02-45B0-8A3F-B1F88FE47A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED91F0A2-BD02-45B0-8A3F-B1F88FE47A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D071CD7D-1581-402A-81F8-24FD3E557993}
+	EndGlobalSection
+EndGlobal
