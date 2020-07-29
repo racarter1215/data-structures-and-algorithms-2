@@ -10,6 +10,7 @@
 
 ### Challenge 10: Stacks and Queues
 
-### Challenge 11: Queues with Stacks
+### Challenge 11: Queue with Stacks
 
-### Challenge 15: Binary Tree and BST Implementation
+### Challenge 12: FIFO Animal Shelter
+
