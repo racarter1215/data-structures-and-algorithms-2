@@ -3,8 +3,10 @@
     "",
     "\\challenges",
     "\\challenges\\MultiBracketValidation",
-    "\\challenges\\MultiBracketValidation\\assets"
+    "\\challenges\\MultiBracketValidation\\assets",
+    "\\tree",
+    "\\tree\\XUnitTestProject1"
   ],
-  "SelectedNode": "\\challenges\\MultiBracketValidation\\assets\\codechallenge13-whiteboard.png",
+  "SelectedNode": "\\tree\\README.md",
   "PreviewInSolutionExplorer": false
 }

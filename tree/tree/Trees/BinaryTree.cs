@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace tree.Trees
 {
-    public class Tree<T>
+    public class BinaryTree<T>
     {
         public Node<T> Root { get; set; }
 
-        public Tree()
+        public BinaryTree()
         {
 
         }
 
-        public Tree(T value)
+        public BinaryTree(T value)
         {
             Node<T> root = new Node<T>(value);
             Root = root;
@@ -117,6 +118,5 @@ namespace tree.Trees
             }
             traversal.Add(root.Value);
         }
-
     }
 }
