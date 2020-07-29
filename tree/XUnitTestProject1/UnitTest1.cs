@@ -157,6 +157,40 @@ namespace XUnitTestProject1
             //Assert
             Assert.Equal(leafOrder, postOrder);
         }
+        /// <summary>
+        /// checks a tree for largest value and returns that value
+        /// </summary>
+        [Fact]
+        public void ReturnsMaxValue()
+        {
+            //Arrange
+            BinaryTree<int> result = new BinaryTree<int>();
+            Node<int> rootNumber = new Node<int>(1);
+            Node<int> b = new Node<int>(3);
+            Node<int> c = new Node<int>(4);
+            Node<int> d = new Node<int>(6);
+            Node<int> e = new Node<int>(8);
+            Node<int> f = new Node<int>(2);
+            result.Root = rootNumber;
 
+            rootNumber.LeftChild = b;
+            rootNumber.RightChild = c;
+
+            b.LeftChild = d;
+            b.RightChild = e;
+
+            c.LeftChild = f;
+
+            List<int> answer = new List<int>()
+            {
+                'd', 'e', 'b', 'f', 'c', 'a'
+            };
+
+            //Act
+            List<int> postOrder = ReturnsMaxValue(result.Root);
+
+            //Assert
+            Assert.Equal(answer, postOrder);
+        }
     }
 }
