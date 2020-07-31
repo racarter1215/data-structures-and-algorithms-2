@@ -70,18 +70,5 @@ namespace QueueWithStacks
             }
         }
 	    
-	public string Pop()
-        {
-            try
-            {
-                Node temp = Top;
-                Top = Top.Next;
-                return temp.Value;
-            }
-            catch(NullReferenceException a)
-            {
-                throw a;
-            }
-        }
 	}
 }
