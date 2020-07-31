@@ -19,6 +19,7 @@ namespace StacksAndQueues
             Top = node;
 
         }
+
         /// <summary>
         /// the below method pops off the top value of a stack
         /// </summary>

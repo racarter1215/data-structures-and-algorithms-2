@@ -4,7 +4,7 @@ using StacksAndQueues;
 
 namespace XUnitTestProject1
 {
-    public class UnitTest1
+    public class StackTests
     {
         [Fact]
         public void CanPushOnStack()
@@ -25,15 +25,20 @@ namespace XUnitTestProject1
         {
             // Arrange
             Stack stack = new Stack();
-            // Act
-            var answer1 = stack.Push("first test");
-            answer2 = stack.Push("second test");
-            stack.Push("second test");
-            // Assert
-
-            Assert.Equal(answer, stack.Top.Value);
+            // Act and Assert
+            stack.Push("first test");
+            Assert.Equal("first test", stack.Top.Value);
             Assert.NotNull(stack.Top.Value);
+            stack.Push("second test");
+            Assert.Equal("second test", stack.Top.Value);
+            Assert.NotNull(stack.Top.Value);
+            stack.Push("third test");
+            Assert.Equal("third test", stack.Top.Value);
+            Assert.NotNull(stack.Top.Value);
+            
 
         }
+
+        [Fact]
     }
 }

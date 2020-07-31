@@ -69,5 +69,15 @@ namespace StacksAndQueues
             }
             return Front.Value;
         }
+        /// <summary>
+        /// creates an empty queue
+        /// </summary>
+        /// <returns>an empty queue</returns>
+        public bool IsEmpty()
+        {
+            Queue queue = new Queue();
+            var answer = queue.IsEmpty();
+            return answer;
+        }
     }
 }
