@@ -49,5 +49,16 @@ namespace StacksAndQueues
             }
             return Top.Value;
         }
+        /// <summary>
+        /// creates an empty stack
+        /// </summary>
+        /// <returns>an empty stack</returns>
+        public bool IsEmpty()
+        {
+            Queue queue = new Queue();
+            var answer = queue.IsEmpty();
+            return answer;
+        }
+
     }
 }
