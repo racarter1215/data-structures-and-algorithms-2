@@ -19,7 +19,10 @@ namespace StacksAndQueues
             Top = node;
 
         }
-
+        /// <summary>
+        /// the below method pops off the top value of a stack
+        /// </summary>
+        /// <returns>the popped value</returns>
         public string Pop()
         {
             try
@@ -32,6 +35,18 @@ namespace StacksAndQueues
             {
                 throw a;
             }
+        }
+        /// <summary>
+        /// looks at the top node of a stack, if it is there
+        /// </summary>
+        /// <returns>the value of the top node</returns>
+        public string Peek()
+        {
+            if (Top == null)
+            {
+                throw new Exception("The Stack is Empty");
+            }
+            return Top.Value;
         }
     }
 }
