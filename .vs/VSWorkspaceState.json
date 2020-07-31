@@ -5,8 +5,9 @@
     "\\challenges\\MultiBracketValidation",
     "\\challenges\\MultiBracketValidation\\assets",
     "\\tree",
-    "\\tree\\XUnitTestProject1"
+    "\\tree\\tree",
+    "\\tree\\tree\\Trees"
   ],
-  "SelectedNode": "\\tree\\README.md",
+  "SelectedNode": "\\tree\\tree\\Trees\\BinaryTree.cs",
   "PreviewInSolutionExplorer": false
 }
