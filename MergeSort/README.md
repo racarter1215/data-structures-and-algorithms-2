@@ -45,7 +45,7 @@ This is accomplised by dividing the array by twos until you have each individual
 
 ### Efficiency
 * Methods that have Big O efficiency O(n) for time
-  * MergeSort(). Because we are only testing a single integer array, and only a portion of it at that, it saves on time.
+  * MergeSort(). Because one is only testing a single integer array, and only a portion of it at that, it saves on time.
  
 
 * Methods that have Big O efficiency O(1) for space
