@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\MultiBracketValidation",
-    "\\challenges\\MultiBracketValidation\\assets",
-    "\\tree",
-    "\\tree\\tree",
-    "\\tree\\tree\\Trees"
+    "\\InsertionSort",
+    "\\StacksandQueues"
   ],
-  "SelectedNode": "\\tree\\tree\\Trees\\BinaryTree.cs",
+  "SelectedNode": "\\challenges\\MultiBracketValidation",
   "PreviewInSolutionExplorer": false
 }
