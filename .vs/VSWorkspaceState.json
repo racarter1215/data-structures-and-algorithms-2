@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\InsertionSort",
+    "\\MergeSort",
     "\\StacksandQueues"
   ],
-  "SelectedNode": "\\challenges\\MultiBracketValidation",
+  "SelectedNode": "\\MergeSort\\assets",
   "PreviewInSolutionExplorer": false
 }
