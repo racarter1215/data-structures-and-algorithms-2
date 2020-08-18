@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\MergeSort",
+    "\\HashTable",
+    "\\HashTable\\HashTable",
+    "\\HashTable\\XUnitTestProject1",
     "\\MergeSort\\assets"
   ],
-  "SelectedNode": "\\MergeSort\\assets\\codechallengeclass27-whiteboard.png",
+  "SelectedNode": "\\HashTable\\README.md",
   "PreviewInSolutionExplorer": false
 }
