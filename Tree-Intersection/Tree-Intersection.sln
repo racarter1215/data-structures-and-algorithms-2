@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree-Intersection", "Tree-Intersection\Tree-Intersection.csproj", "{D544121F-B70D-4211-A847-CEC350E44AAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{D010769E-E8DD-4704-8216-1CC1DC0B223F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D544121F-B70D-4211-A847-CEC350E44AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D544121F-B70D-4211-A847-CEC350E44AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D544121F-B70D-4211-A847-CEC350E44AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D544121F-B70D-4211-A847-CEC350E44AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D010769E-E8DD-4704-8216-1CC1DC0B223F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D010769E-E8DD-4704-8216-1CC1DC0B223F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D010769E-E8DD-4704-8216-1CC1DC0B223F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D010769E-E8DD-4704-8216-1CC1DC0B223F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30C9D65C-C096-43F5-97F9-D3D6BCF15DA4}
+	EndGlobalSection
+EndGlobal
