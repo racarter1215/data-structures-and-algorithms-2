@@ -53,7 +53,7 @@ This is accomplised by creating a two binary trees, putting all values of the fi
   
   
 ## Solution
-![Whiteboard Image](./assets/codechallengeclass32-whiteboard.png)
+![Whiteboard Image](./assets/codechallenge32-whiteboard.png)
 ---
 
 ## Change Log
