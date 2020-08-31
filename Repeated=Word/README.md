@@ -51,7 +51,7 @@ This is accomplised by creating a linked list out of the strings and utilize a w
   
   
 ## Solution
-![Whiteboard Image](./assets/codechallengeclass31-whiteboard.png)
+![Whiteboard Image](../assets/codechallengeclass31-whiteboard.png)
 ---
 
 ## Change Log
